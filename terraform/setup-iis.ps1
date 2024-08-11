@@ -1,5 +1,5 @@
 # Ensure IIS is installed
-Install-WindowsFeature -Name Web-Server -IncludeManagementTools;
+Enable-WindowsOptionalFeature -Online -FeatureName IIS-WebServerRole -All;
 
 # Ensure the folder exists
 $siteName = 'DuplicateSite'
